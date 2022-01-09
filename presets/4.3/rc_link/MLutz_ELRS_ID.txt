@@ -1,0 +1,9 @@
+#$ TITLE: MLutz ELRS Settings
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: RC_LINK
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: RC, MLutz, ELRS
+#$ AUTHOR: MLutz
+#$ DESCRIPTION: ELRS Bind Phrase for MLutz RC environment
+
+set expresslrs_uid = 164,171,112,2,33,18

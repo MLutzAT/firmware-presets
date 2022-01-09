@@ -1,0 +1,18 @@
+#$ TITLE: MLutz Mode Settings
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: MODES
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: modes, MLutz
+#$ AUTHOR: MLutz
+#$ DESCRIPTION: ML Standard modes BF4.3
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 2 900 1300 0 0
+aux 2 2 2 1300 2100 0 0
+aux 3 4 3 1700 2100 0 0
+aux 4 13 3 1300 1700 0 0
+aux 5 19 1 1700 2100 0 0
+aux 6 28 2 1300 2100 0 0
+aux 7 30 2 1700 2100 0 0
+aux 8 35 3 1700 2100 0 0

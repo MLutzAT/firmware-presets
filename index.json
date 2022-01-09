@@ -121,12 +121,15 @@
       "BMSThomas",
       "ctzsnooze",
       "Directory",
+      "DusKing1 (Hugo Chiang), Pitronic",
       "Evan Turner (Headsup)",
       "IllusionFpv",
       "Ivan Efimov (Limon)",
       "Joshua Bardwell",
+      "Justice - Gary Kent",
       "Mark Spatz (UAV Tech)",
       "MinChan Kim",
+      "MLutz",
       "NemesisXB",
       "sugarK",
       "SupaflyFPV"
@@ -134,6 +137,7 @@
     "keywords": [
       "\\\\GAS",
       "150hz",
+      "1S",
       "250hz",
       "3 inch",
       "3\"",
@@ -146,9 +150,11 @@
       "5in",
       "6 Inch",
       "6\"",
+      "65mm",
       "6S",
       "7 Inch",
       "7\"",
+      "acro",
       "actual",
       "adjustments",
       "aggressive",
@@ -158,6 +164,7 @@
       "basic",
       "betaflight",
       "blackbox",
+      "BMI270",
       "BMSThomas",
       "camera",
       "camera_control",
@@ -193,6 +200,9 @@
       "freesytle",
       "frsky",
       "GPS",
+      "gyro",
+      "gyros",
+      "gyroscope",
       "HD",
       "HD_freestyle",
       "HDzero",
@@ -202,6 +212,7 @@
       "IllusionFpv",
       "IRC",
       "jitter",
+      "justice",
       "karate",
       "KarateBrot",
       "launch",
@@ -212,7 +223,9 @@
       "log",
       "logging",
       "mamba",
+      "meteor",
       "MinChan",
+      "MLutz",
       "mode",
       "modes",
       "MultiGP",
@@ -249,6 +262,7 @@
       "SA 2.0 lite",
       "SA 2.1",
       "sbus",
+      "settings",
       "shames",
       "shark bite",
       "smooth",
@@ -287,11 +301,57 @@
       "vtx",
       "vtx table",
       "vtxtable",
+      "whoop",
       "world champion",
       "youtube"
     ]
   },
   "presets": [
+    {
+      "fullPath": "presets/4.3/filters/BMI270.txt",
+      "hash": "af69e3c94ef3dcdd2fca5906292a0dbcf4e4ac1cf74a35860d379cd9e5436c4f",
+      "options": [
+        {
+          "name": "BMI270 Clean build without RPM filters",
+          "checked": false
+        },
+        {
+          "name": "BMI270 Clean build with RPM filters DSHOT300",
+          "checked": false
+        },
+        {
+          "name": "BMI270 Clean build with RPM filters DSHOT600",
+          "checked": false
+        }
+      ],
+      "title": "4.3 Filter settings for BMI270 gyroscope",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "FILTERS",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "BMI270",
+        "filter",
+        "filters",
+        "gyroscope",
+        "gyro",
+        "gyros",
+        "settings",
+        "RPM"
+      ],
+      "author": "DusKing1 (Hugo Chiang), Pitronic",
+      "description": [
+        "These settings are for BMI270 gyroscope only.",
+        "With only these settings, the BMI270 will give a nice output and control performance.",
+        "Please check the available options in this preset."
+      ],
+      "discussion": ": https://github.com/betaflight/firmware-presets/pull/141/",
+      "warning": "This preset changes PID loop rate to 3.2k. This is necessary for some BMI270 gyro boards. Please, don't change it back to anything higher than 4k unless you know what you are doing.",
+      "include": [
+        "presets/4.3/filters/defaults.txt"
+      ]
+    },
     {
       "fullPath": "presets/4.3/filters/ctzsnooze_race.txt",
       "hash": "505a3cf9aff8fc6b861770d3bcafcb61431e2865f3fa10170f8c5cc044b5fea1",
@@ -496,7 +556,7 @@
     },
     {
       "fullPath": "presets/4.3/filters/default_rpm_clean.txt",
-      "hash": "7d63ae8fc0c23d33d068667a7ffb5755aafcea2ab3acaf675924c9b21a6786fe",
+      "hash": "74245724c57bb8e839d05a92110150515350060cf71c3a28b37e83cc61569456",
       "options": [],
       "title": "4.3 Filter settings for CLEAN build with RPM FILTERING.",
       "firmware_version": [
@@ -739,6 +799,25 @@
       ]
     },
     {
+      "fullPath": "presets/4.3/modes/MLutz_MODES.txt",
+      "hash": "5d1c8af229a694e3d9c5bc58455c1dbcb8a63d3b168a28f5b029ed5561c057ab",
+      "options": [],
+      "title": "MLutz Mode Settings",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "MODES",
+      "status": "COMMUNITY",
+      "keywords": [
+        "modes",
+        "MLutz"
+      ],
+      "author": "MLutz",
+      "description": [
+        "ML Standard modes BF4.3"
+      ]
+    },
+    {
       "fullPath": "presets/4.3/osd/defaults.txt",
       "hash": "36eb8ae097d0362030b297477c971280aad5562ac512a3f7ffa91949ed56db82",
       "options": [],
@@ -756,6 +835,25 @@
       "author": "Betaflight",
       "description": [
         "Resets the OSD values back to Betaflight 4.3 defaults"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/osd/MLutz_OSD.txt",
+      "hash": "dc1c894c3367d48537effeaf2feab60d4210939982fbb9d65f0c47e57b59e40e",
+      "options": [],
+      "title": "MLutz OSD Settings",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OSD",
+      "status": "COMMUNITY",
+      "keywords": [
+        "OSD",
+        "MLutz"
+      ],
+      "author": "MLutz",
+      "description": [
+        "Full OSD settings as I like it! ;)"
       ]
     },
     {
@@ -1117,7 +1215,7 @@
     },
     {
       "fullPath": "presets/4.3/rates/ctzsnooze_race.txt",
-      "hash": "36263af4495e625beae1ae6490a0cacc723525ec3bcbbe8f9c4d0b7699f4bbbb",
+      "hash": "c580ff16eac1b602195f1194caff3da0476d55c9bc7e527f7b0ba8b67774c24b",
       "options": [],
       "title": "race rates by ctzsnooze",
       "firmware_version": [
@@ -1130,9 +1228,9 @@
       ],
       "author": "ctzsnooze",
       "description": [
-        "Race rates by ctzsnooze.",
+        "Race rates by ctzsnooze.  Sharp in centre, linear.",
         "ACTUAL rates with 650 deg/s max, 150 centre, no expo.",
-        "Chris Thompson (ctzsnooze) - grey eminence of Betaflight and one of the biggest influencers on Betaflight and on how all modern acro drones fly these days. He is also the most experienced blackbox reviewer. Feel free to check out Facebook group: Betaflight BlackBox Log Review."
+        "Chris Thompson (ctzsnooze) - grey eminence of Betaflight."
       ],
       "discussion": "https://github.com/betaflight/firmware-presets/pull/97",
       "include": [
@@ -1375,6 +1473,25 @@
       ]
     },
     {
+      "fullPath": "presets/4.3/rates/MLutz_RATES.txt",
+      "hash": "722a4b2936035acbee3fc2d3a84052713a770aaece49318cde955d8091231963",
+      "options": [],
+      "title": "MLutz Rate Settings",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "RATES",
+      "status": "COMMUNITY",
+      "keywords": [
+        "rates",
+        "MLutz"
+      ],
+      "author": "MLutz",
+      "description": [
+        "ML Standard rates BF4.3"
+      ]
+    },
+    {
       "fullPath": "presets/4.3/rates/UAV_tech.txt",
       "hash": "b446efe96a216241890e10e0308030dd02b4ca975df3d50ba6723039768c343e",
       "options": [],
@@ -1519,7 +1636,7 @@
       "discussion": "https://github.com/betaflight/firmware-presets/pull/30"
     },
     {
-      "fullPath": "presets/4.3/rc_link/Crossfire_dyanmic_rate.txt",
+      "fullPath": "presets/4.3/rc_link/Crossfire_dynamic_rate.txt",
       "hash": "6f1509982af245a5d997feda60121687e44e6f2bfb76f525c23817f5a2a7d196",
       "options": [],
       "title": "TBS Crossfire Dynamic rate CFV2/CFV3",
@@ -1569,12 +1686,8 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/elrs_150hz.txt",
-      "hash": "60e26ee7de4ac6ed03d06903a416a7b292d9ceb6eadb143f192d7e2cd753c6af",
+      "hash": "bb3e3fc223ebc2e0acca7175fffc6cc64874ef737666305aa2d5beacdc3e15b4",
       "options": [
-        {
-          "name": "Whole pack voltage readings",
-          "checked": false
-        },
         {
           "name": "Race feedforward settings",
           "checked": false
@@ -1585,6 +1698,10 @@
         },
         {
           "name": "Cinematic feedforward settings",
+          "checked": false
+        },
+        {
+          "name": "Whole pack voltage readings",
           "checked": false
         }
       ],
@@ -1606,17 +1723,13 @@
         "Basic RC link settings for a 150hz ELRS link via CRSF",
         "WARNING: make ABSOLUTELY SURE that the OpenTx or EdgeTx Hardware ADC Filter is un-checked!",
         "WARNING: check that you are using a compatible version of EdgeTx or OpenTx!",
-        "The voltage option is for OpenTx telemetry back to the transmitter, default is per cell, option is whole pack."
+        "Sends single cell voltage back to the transmitter, unless you choose the whole pack option."
       ]
     },
     {
       "fullPath": "presets/4.3/rc_link/elrs_250hz.txt",
-      "hash": "e0905b0c5c808ac6ffd9172bbc5567c56880a774353f21bc2b704cc1a100adb3",
+      "hash": "c75aee057ebc5a355137b1f05e1e2dc77336e67bd3f519948310752e716c5da7",
       "options": [
-        {
-          "name": "Whole pack voltage readings to Tx",
-          "checked": false
-        },
         {
           "name": "Race feedforward settings",
           "checked": false
@@ -1627,6 +1740,10 @@
         },
         {
           "name": "Cinematic feedforward settings",
+          "checked": false
+        },
+        {
+          "name": "Whole pack voltage readings to Tx",
           "checked": false
         }
       ],
@@ -1647,17 +1764,13 @@
         "Basic RC link settings for a 250hz ELRS link via CRSF",
         "WARNING: make ABSOLUTELY SURE that the OpenTx or EdgeTx Hardware ADC Filter is un-checked!",
         "WARNING: check that you are using a compatible version of EdgeTx or OpenTx!",
-        "Voltage option is for OpenTx telemetry back to the transmitter, default is per cell, option whole pack."
+        "Sends single cell voltage back to the transmitter, unless you choose the whole pack option."
       ]
     },
     {
       "fullPath": "presets/4.3/rc_link/elrs_500hz.txt",
-      "hash": "83aa700e039b46f3633b0c13a4ed220a89372e18cdbe1590d8ba30e7a3abb566",
+      "hash": "96becb8111085b78ae514c01cfccd2cee9181e18fd2bb40c0f955a88f27aa9d0",
       "options": [
-        {
-          "name": "Whole pack voltage readings to Tx",
-          "checked": false
-        },
         {
           "name": "Race feedforward settings",
           "checked": false
@@ -1668,6 +1781,10 @@
         },
         {
           "name": "Cinematic feedforward settings",
+          "checked": false
+        },
+        {
+          "name": "Whole pack voltage readings to Tx",
           "checked": false
         }
       ],
@@ -1687,19 +1804,15 @@
       "description": [
         "Basic RC link settings for a 500hz ELRS link via CRSF.",
         "WARNING: make ABSOLUTELY SURE that the OpenTx or EdgeTx Hardware ADC Filter is un-checked!",
-        "WARNING: check that you are using a compatible version of EdgeTx or OpenTx!",
+        "WARNING: Use a compatible version of EdgeTx or OpenTx!",
         "If a log shows excessive noise in your feedforward trace, most likely there is a Tx firmware issue.",
-        "The Voltage option is for OpenTx telemetry back to the transmitter, default is per cell, option whole pack."
+        "Sends single cell voltage back to the transmitter, unless you choose the whole pack option."
       ]
     },
     {
       "fullPath": "presets/4.3/rc_link/elrs_50hz.txt",
-      "hash": "4f29a032197bc16dc671c975b813cb2f27a171fc38f7a672676bf17978441ff9",
+      "hash": "423a610824d7cab41a05f626dfe87b23f1361df617e39596e1df99fbd6f8adfa",
       "options": [
-        {
-          "name": "Whole pack voltage readings",
-          "checked": false
-        },
         {
           "name": "Race feedforward settings",
           "checked": false
@@ -1710,6 +1823,10 @@
         },
         {
           "name": "Cinematic feedforward settings",
+          "checked": false
+        },
+        {
+          "name": "Whole pack voltage readings",
           "checked": false
         }
       ],
@@ -1731,7 +1848,7 @@
         "Basic RC link settings for a 50hz ELRS link via CRSF.",
         "WARNING: make ABSOLUTELY SURE that the OpenTx or EdgeTx Hardware ADC Filter is un-checked!",
         "WARNING: check that you are using a compatible version of EdgeTx or OpenTx!",
-        "The voltage option is for OpenTx telemetry back to the transmitter, default is per cell, option is whole pack."
+        "Sends single cell voltage back to the transmitter, unless you choose the whole pack option."
       ]
     },
     {
@@ -1797,6 +1914,26 @@
       ]
     },
     {
+      "fullPath": "presets/4.3/rc_link/MLutz_ELRS_ID.txt",
+      "hash": "1f93bfdf730f6da5a2b94ace5ea6592ff8735a9ce9325e85d7107e2f706d4d8c",
+      "options": [],
+      "title": "MLutz ELRS Settings",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "RC_LINK",
+      "status": "COMMUNITY",
+      "keywords": [
+        "RC",
+        "MLutz",
+        "ELRS"
+      ],
+      "author": "MLutz",
+      "description": [
+        "ELRS Bind Phrase for MLutz RC environment"
+      ]
+    },
+    {
       "fullPath": "presets/4.3/rc_link/Tracer_CFV2.txt",
       "hash": "a3788f829dd086f1c3ce8fe5fffbb8d0e92f5a88fd0218784875c105c9a40990",
       "options": [],
@@ -1852,10 +1989,26 @@
     },
     {
       "fullPath": "presets/4.3/rc_smoothing/cinematic.txt",
-      "hash": "874cf6273bc3ffa9147f7d3d09d7867495e0f56a1e689062277dcde65cf30ead",
+      "hash": "214a5b0d6b79dd198239e7875221402904f728986c5938eb6d260f8bca4c45a1",
       "options": [
         {
-          "name": "Cinematic Actual rates",
+          "name": "250Hz RC Link",
+          "checked": false
+        },
+        {
+          "name": "500Hz RC Link",
+          "checked": false
+        },
+        {
+          "name": "More responsive",
+          "checked": false
+        },
+        {
+          "name": "Ultra smooth",
+          "checked": false
+        },
+        {
+          "name": "Suggested cinematic Actual rates",
           "checked": false
         }
       ],
@@ -1877,12 +2030,10 @@
       "author": "ctzsnooze",
       "description": [
         "Warning: will feel VERY 'soft' and smooth with small stick inputs!",
-        "Note: auto-smoothing values are over-ridden by manually configure cutoff values.",
-        "This preset provides RC smoothing settings for cinematic HD footage. By using fixed cutoffs, it will give a consistent smooth stick feel across a wide range of RC link frequencies.",
+        "Note: auto-smoothing values are over-ridden by manual cutoff values.",
+        "By using fixed cutoffs, we get a consistent smooth stick feel across a wide range of RC link frequencies.",
         "There is no need to turn off feedforward; it should remain at values that give good stick responsiveness.",
-        "For even smoother stick feel, reduce rc_smoothing_setpoint_cutoff and rc_smoothing_feedforward_cutoff to 10 in CLI.  If too smooth, increase rc_smoothing_setpoint_cutoff and rc_smoothing_feedforward_cutoff to 20 in CLI.",
-        "",
-        "Suggestion: Actual Rates, low centre sensitivity, no expo, 400-500 deg/s max."
+        "Check the 250Hz or 500Hz option if you use a high speed link"
       ]
     },
     {
@@ -2002,7 +2153,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/ctzsnooze_5in_4S_race.txt",
-      "hash": "adf2a888087a2037469a02ffbaa81898513cfca47f6566bafaa127a629e80e9c",
+      "hash": "c70a40bac9e01d2da49b6209cb309fa96cc13eadbaccde0ee82dcb973096fc3d",
       "options": [
         {
           "name": "FILTER: RPM enabled, ctzsnooze race",
@@ -2014,6 +2165,14 @@
         },
         {
           "name": "FILTER: NON-RPM ESCs, normal build",
+          "checked": false
+        },
+        {
+          "name": "RC_LINK 250Hz",
+          "checked": false
+        },
+        {
+          "name": "RC_LINK 500Hz",
           "checked": false
         },
         {
@@ -2067,6 +2226,7 @@
         "",
         "PLEASE CHECK THE OPTIONS IN THE LIST ABOVE!",
         "NOTE: You must choose ONE of the three FILTER options!",
+        "NOTE: 250hz or 500hz RC Link users - check the right one!",
         "You should check all the (recommended) options",
         "",
         "My suggested Rates are (optional)"
@@ -2108,7 +2268,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/freedom_spec_460g.txt",
-      "hash": "5ab6ccd508a5938a5b721fa57221ecee5ed3cc787493661a43bc309a48d86b61",
+      "hash": "96d94f2b2ef635e654c25528335dbc8ff76a05877fe2b1df07f37ca99cec554f",
       "options": [
         {
           "name": "Dshot300",
@@ -2883,6 +3043,126 @@
       "include": [
         "presets/4.3/tune/defaults.txt",
         "presets/4.3/filters/defaults.txt"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/tune/whoop_justice.txt",
+      "hash": "5d45e98bc295ad6e9174a2c3cd06878cbbd69a6f24ccb0ff228d96dab3033f95",
+      "options": [
+        {
+          "name": "FILTER: RPM enabled, clean build",
+          "checked": false
+        },
+        {
+          "name": "FILTER: RPM enabled, normal build",
+          "checked": false
+        },
+        {
+          "name": "FILTER: RPM enabled, noisy build",
+          "checked": false
+        },
+        {
+          "name": "FILTER: NON-RPM ESCs, normal build",
+          "checked": false
+        },
+        {
+          "name": "RC_LINK 250Hz",
+          "checked": false
+        },
+        {
+          "name": "RC_LINK 500Hz",
+          "checked": false
+        },
+        {
+          "name": "Spicy tune (clean builds only)",
+          "checked": false
+        },
+        {
+          "name": "Normal tune (normal builds)",
+          "checked": false
+        },
+        {
+          "name": "Safer tune (older builds)",
+          "checked": false
+        },
+        {
+          "name": "Default RC_smoothing (recommended)",
+          "checked": false
+        },
+        {
+          "name": "Default warning voltage (recommended)",
+          "checked": false
+        },
+        {
+          "name": "No deadband (recommended)",
+          "checked": false
+        },
+        {
+          "name": "Arm at any angle (recommended)",
+          "checked": false
+        },
+        {
+          "name": "50% Sag compensation (optional)",
+          "checked": false
+        },
+        {
+          "name": "Sharper throttle response curve (optional)",
+          "checked": false
+        },
+        {
+          "name": "Enable dynamic idle at 40 (optional)",
+          "checked": false
+        },
+        {
+          "name": "Try Gary's race rates! (go on!)",
+          "checked": false
+        }
+      ],
+      "title": "Whoop race tune by Justice",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "whoop",
+        "65mm",
+        "1S",
+        "race",
+        "acro",
+        "tune",
+        "justice",
+        "meteor"
+      ],
+      "author": "Justice - Gary Kent",
+      "discussion": "https://github.com/betaflight/firmware-presets/pull/142",
+      "description": [
+        "Hot 65mm whoop tune for racing",
+        "",
+        "RPM filtering is STRONGLY RECOMMENDED!",
+        "PLEASE REVIEW THE OPTIONS IN THE LIST ABOVE!",
+        "Check ONE of the three FILTER options!",
+        "",
+        "The (recommended) options are what Gary uses, you should check all of them.",
+        "The others, marked (optional) are not Gary's personal preference, but are for \"testing\".",
+        "",
+        "These settings are applied by this Preset:",
+        "- Vbat Sag Compensation: 100%,",
+        "- VBat warning voltage: 3.5V",
+        "- DShot Idle: 6%",
+        "- Dynamic Idle: OFF",
+        "- Anti-Gravity: 45",
+        "- I-Term Relax: 20",
+        "",
+        "Gary's Race Rates are included too - give them a try!"
+      ],
+      "include": [
+        "presets/4.3/tune/defaults.txt",
+        "presets/4.3/filters/default_rpm_clean.txt",
+        "presets/4.3/filters/default_rpm_normal.txt",
+        "presets/4.3/filters/default_rpm_noisy.txt",
+        "presets/4.3/filters/default_no_rpm_normal.txt",
+        "presets/4.3/rc_smoothing/race.txt"
       ]
     },
     {
